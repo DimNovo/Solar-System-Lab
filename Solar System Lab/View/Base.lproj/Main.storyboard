@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vgG-FX-OsU">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,22 +10,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Solar System Primitives-->
+        <!--Solar System-->
         <scene sceneID="xoX-f7-g4u">
             <objects>
                 <tableViewController id="gbA-0P-dov" customClass="PlanetsListTableViewController" customModule="Solar_System_Lab" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aXW-0E-V8u">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <tableView key="view" clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aXW-0E-V8u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlanetCell" rowHeight="88" id="f0t-Dk-CQf" customClass="PlanetViewCell" customModule="Solar_System_Lab" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="88"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f0t-Dk-CQf" id="EB7-3A-5pQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="87.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="87.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Dw3-yd-gSW">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                                        </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth" translatesAutoresizingMaskIntoConstraints="NO" id="wVI-MY-ZLU">
                                             <rect key="frame" x="16" y="11" width="66" height="66"/>
                                             <constraints>
@@ -33,16 +37,16 @@
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-pt-Vbg">
-                                            <rect key="frame" x="98" y="11" width="235" height="66"/>
+                                            <rect key="frame" x="98" y="11" width="180" height="66"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq6-g2-dC3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="235" height="39"/>
-                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="25"/>
-                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="37"/>
+                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                                    <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.77090669014084512" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2j-pP-jO8">
-                                                    <rect key="frame" x="0.0" y="39" width="235" height="27"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="t2j-pP-jO8">
+                                                    <rect key="frame" x="0.0" y="37" width="180" height="29"/>
                                                     <fontDescription key="fontDescription" name="EuphemiaUCAS-Italic" family="Euphemia UCAS" pointSize="17"/>
                                                     <color key="textColor" red="0.47668464310000003" green="0.69553601300000001" blue="0.84892462049999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -53,10 +57,14 @@
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="wVI-MY-ZLU" secondAttribute="bottom" id="2Zr-zQ-aBX"/>
                                         <constraint firstItem="Bxe-pt-Vbg" firstAttribute="top" secondItem="EB7-3A-5pQ" secondAttribute="topMargin" id="2oZ-wi-Htj"/>
+                                        <constraint firstItem="Dw3-yd-gSW" firstAttribute="top" secondItem="EB7-3A-5pQ" secondAttribute="top" id="3If-AO-2WQ"/>
                                         <constraint firstItem="Bxe-pt-Vbg" firstAttribute="leading" secondItem="wVI-MY-ZLU" secondAttribute="trailing" constant="16" id="3lt-fT-AW5"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Bxe-pt-Vbg" secondAttribute="bottom" id="RL9-19-6uS"/>
                                         <constraint firstItem="wVI-MY-ZLU" firstAttribute="top" secondItem="EB7-3A-5pQ" secondAttribute="topMargin" id="fUe-sJ-jNy"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Bxe-pt-Vbg" secondAttribute="trailing" id="faD-l9-uAT"/>
+                                        <constraint firstItem="Dw3-yd-gSW" firstAttribute="leading" secondItem="EB7-3A-5pQ" secondAttribute="leading" id="g6O-bm-w7I"/>
+                                        <constraint firstAttribute="bottom" secondItem="Dw3-yd-gSW" secondAttribute="bottom" id="h9F-MM-an9"/>
+                                        <constraint firstAttribute="trailing" secondItem="Dw3-yd-gSW" secondAttribute="trailing" constant="-34" id="nVU-S1-PUs"/>
                                         <constraint firstItem="wVI-MY-ZLU" firstAttribute="leading" secondItem="EB7-3A-5pQ" secondAttribute="leadingMargin" id="tTe-iw-pVt"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -65,7 +73,7 @@
                                     <outlet property="descriptionPlanetLabel" destination="t2j-pP-jO8" id="IGO-Ah-L4I"/>
                                     <outlet property="planetImageView" destination="wVI-MY-ZLU" id="YUs-7D-CLt"/>
                                     <outlet property="planetNameLabel" destination="Iq6-g2-dC3" id="d4Y-bS-N6I"/>
-                                    <segue destination="h9p-Bu-zR1" kind="show" identifier="PlanetPresentationSegue" id="k2k-1G-Dla"/>
+                                    <segue destination="h9p-Bu-zR1" kind="show" identifier="PlanetPresentationSegue" id="tOA-9h-vQA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -74,18 +82,18 @@
                             <outlet property="delegate" destination="gbA-0P-dov" id="iZL-Pb-oIY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Solar System Primitives" id="iEI-b8-uKE"/>
+                    <navigationItem key="navigationItem" title="Solar System" id="iEI-b8-uKE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZoS-38-WdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="254" y="143"/>
+            <point key="canvasLocation" x="253.125" y="142.6056338028169"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1yh-gz-KKJ">
             <objects>
                 <navigationController id="vgG-FX-OsU" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zTs-N4-Hzq">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -101,15 +109,36 @@
             <objects>
                 <viewController id="h9p-Bu-zR1" customClass="PlanetPresentationViewController" customModule="Solar_System_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h6c-VH-x1J">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6E5-TY-xcK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </sceneKitView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lQI-Ke-0I1">
+                                <rect key="frame" x="0.0" y="464" width="320" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWO-I4-Kba">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
+                                        <color key="textColor" red="0.59999999999999998" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cys-Lu-b1k">
+                                        <rect key="frame" x="0.0" y="42" width="320" height="42"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Italic" family="Euphemia UCAS" pointSize="20"/>
+                                        <color key="textColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="E8P-Is-ycK" firstAttribute="trailing" secondItem="lQI-Ke-0I1" secondAttribute="trailing" id="06v-Ps-6bM"/>
+                            <constraint firstItem="lQI-Ke-0I1" firstAttribute="leading" secondItem="E8P-Is-ycK" secondAttribute="leading" id="2so-o1-lEX"/>
+                            <constraint firstItem="lQI-Ke-0I1" firstAttribute="top" secondItem="E8P-Is-ycK" secondAttribute="top" constant="400" id="53K-Ag-CTN"/>
+                            <constraint firstItem="E8P-Is-ycK" firstAttribute="bottom" secondItem="lQI-Ke-0I1" secondAttribute="bottom" constant="20" id="LB1-Rr-TnG"/>
                             <constraint firstItem="6E5-TY-xcK" firstAttribute="trailing" secondItem="E8P-Is-ycK" secondAttribute="trailing" id="Qnx-yr-3sE"/>
                             <constraint firstItem="6E5-TY-xcK" firstAttribute="leading" secondItem="E8P-Is-ycK" secondAttribute="leading" id="jMI-C2-EX9"/>
                             <constraint firstItem="6E5-TY-xcK" firstAttribute="top" secondItem="h6c-VH-x1J" secondAttribute="top" id="kCx-1h-EQE"/>
@@ -117,13 +146,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E8P-Is-ycK"/>
                     </view>
+                    <connections>
+                        <outlet property="presentedPlanetDescriptionLabel" destination="cys-Lu-b1k" id="Ps9-Jq-qg2"/>
+                        <outlet property="presentedPlanetNameLabel" destination="jWO-I4-Kba" id="f3K-IQ-RRQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANa-n4-QEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1138" y="143"/>
+            <point key="canvasLocation" x="1136.8" y="142.57871064467767"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Earth" width="1920" height="1200"/>
+        <image name="Earth" width="1107" height="1107"/>
+        <image name="backgroundImage" width="800" height="534"/>
     </resources>
 </document>

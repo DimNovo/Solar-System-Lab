@@ -14,6 +14,10 @@ class PlanetsListTableViewController: UITableViewController {
     var planets = [Planet]()
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.blackOpaque
+        self.navigationController?.navigationBar.barTintColor  = UIColor.clear
         
         loadPlanets()
     }
@@ -41,17 +45,17 @@ class PlanetsListTableViewController: UITableViewController {
     
     func configure(cell: PlanetViewCell, with planet: Planet) {
         cell.planetImageView.image = planet.planetImage
+//        cell.planetImageView.layer.cornerRadius = cell.planetImageView.frame.size.width / 2
         cell.planetNameLabel.text = planet.planetName
         cell.descriptionPlanetLabel.text = planet.description
+        cell.contentView.backgroundColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "PlanetPresentationSegue" else { return }
-        
         let controller = segue.destination as! PlanetPresentationViewController
         
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        
         controller.planet = planets[indexPath.row]
     }
 }
