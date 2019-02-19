@@ -28,7 +28,8 @@ class PlanetPresentationViewController: UIViewController {
         
         scene.rootNode.addChildNode(cameraNode)
         
-        if planetNodeName == "Sun" {
+        if planetNodeName == "Sun"
+        {
             let lightNode = SCNNode()
             lightNode.light = SCNLight()
             lightNode.light?.type = .probe
@@ -62,9 +63,11 @@ class PlanetPresentationViewController: UIViewController {
     func updateUI() {
         guard let presentedPlanet = planet else { return }
         infoStackView.isHidden = true
-        planetNodeName = presentedPlanet.planetName
-        presentedPlanetNameLabel.text = presentedPlanet.planetName
-        presentedPlanetDescriptionLabel.text = presentedPlanet.description
+        planetNodeName =
+            presentedPlanet.planetName
+        presentedPlanetNameLabel.text =
+            presentedPlanet.planetName
+        presentedPlanetDescriptionLabel.text = presentedPlanet.planetDescription
     }
     
     @IBAction func infoButtonPressed(_ sender: UIButton) {

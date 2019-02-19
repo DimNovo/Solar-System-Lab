@@ -11,11 +11,14 @@ import SceneKit
 
 var planetNodeName: String?
 
-class PresentedPlanetNode: SCNNode {
-        override init() {
+class PresentedPlanetNode: SCNNode
+{
+        override init()
+        {
         super.init()
             
-            switch planetNodeName {
+            switch planetNodeName
+            {
             case "Earth":
                 self.geometry = SCNSphere(radius: CGFloat(1.0))
                 self.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "earthDiffuse")
