@@ -8,7 +8,9 @@
 
 import UIKit
 
-class PlanetViewCell: UITableViewCell {
+class PlanetViewCell: UITableViewCell
+    
+{
     @IBOutlet weak var planetImageView: UIImageView!
     @IBOutlet weak var planetNameLabel: UILabel!
     @IBOutlet weak var descriptionPlanetLabel: UILabel!

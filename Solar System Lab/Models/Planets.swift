@@ -11,32 +11,6 @@ import SceneKit
 
 var planetNodeName: String?
 
-struct Planet {
-    var planetImage: UIImage
-    var description: String
-    var planetName: String
-    
-    static func load() -> [Planet] {
-        return [
-            Planet(planetImage: UIImage(named: "Earth")!,
-                   description: "Earth is the third planet from the Sun and the only astronomical object known to harbor life.",
-                   planetName: "Earth"),
-            Planet(planetImage: UIImage(named: "Moon")!,
-                   description: "Moon",
-                   planetName: "Moon"),
-            Planet(planetImage: UIImage(named: "Mars")!,
-                   description: "Mars",
-                   planetName: "Mars"),
-            Planet(planetImage: UIImage(named: "Venus")!,
-                   description: "Venus",
-                   planetName: "Venus"),
-            Planet(planetImage: UIImage(named: "Jupiter")!,
-                   description: "Jupiter",
-                   planetName: "Jupiter")
-        ]
-    }
-}
-
 class PresentedPlanetNode: SCNNode {
         override init() {
         super.init()
@@ -61,14 +35,18 @@ class PresentedPlanetNode: SCNNode {
             case "Jupiter":
                 self.geometry = SCNSphere(radius: CGFloat(1.5))
                 self.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "jupiterDiffuse")
+            case "Sun":
+                self.geometry = SCNSphere(radius: CGFloat(1.7))
+                self.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "sunDiffuse")
             default:
                 break
             }
             
             self.geometry?.firstMaterial?.shininess = 55
-            let action = SCNAction.rotate(by: (360 * CGFloat(Double.pi / 180)), around: SCNVector3(0, 1, 0), duration: 8)
+            let action = SCNAction.rotate(by: (360 * CGFloat(Double.pi / 180)), around: SCNVector3(0, 1, 0), duration: 10)
             let repeatAction = SCNAction.repeatForever(action)
             self.runAction(repeatAction)
+            
     }
     
     required init?(coder aDecoder: NSCoder) {

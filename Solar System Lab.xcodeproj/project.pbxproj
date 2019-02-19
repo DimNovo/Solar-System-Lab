@@ -17,6 +17,7 @@
 		32C633692219350E00625241 /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C633672219350E00625241 /* stars.png */; };
 		32C6336B2219370B00625241 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6336A2219370B00625241 /* Planets.swift */; };
 		32C6337222195CBD00625241 /* PlanetsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6337122195CBD00625241 /* PlanetsListTableViewController.swift */; };
+		749A4DDB221C2223000967C4 /* PlanetsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A4DDA221C2223000967C4 /* PlanetsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		32C633672219350E00625241 /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
 		32C6336A2219370B00625241 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
 		32C6337122195CBD00625241 /* PlanetsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsListTableViewController.swift; sourceTree = "<group>"; };
+		749A4DDA221C2223000967C4 /* PlanetsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			children = (
 				3280C1C522198AD400D5164B /* PlanetViewCell.swift */,
 				32C6336A2219370B00625241 /* Planets.swift */,
+				749A4DDA221C2223000967C4 /* PlanetsData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32C63365221932EB00625241 /* PlanetPresentationViewController.swift in Sources */,
+				749A4DDB221C2223000967C4 /* PlanetsData.swift in Sources */,
 				32C6336B2219370B00625241 /* Planets.swift in Sources */,
 				3280C1C622198AD400D5164B /* PlanetViewCell.swift in Sources */,
 				32C633512219308500625241 /* AppDelegate.swift in Sources */,

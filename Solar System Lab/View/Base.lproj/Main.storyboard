@@ -36,17 +36,17 @@
                                                 <constraint firstAttribute="width" secondItem="wVI-MY-ZLU" secondAttribute="height" id="jVP-Gj-d5s"/>
                                             </constraints>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-pt-Vbg">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-pt-Vbg">
                                             <rect key="frame" x="98" y="11" width="180" height="66"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq6-g2-dC3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="37"/>
-                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq6-g2-dC3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="33"/>
+                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.77090669014084512" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="t2j-pP-jO8">
-                                                    <rect key="frame" x="0.0" y="37" width="180" height="29"/>
+                                                    <rect key="frame" x="0.0" y="33" width="180" height="33"/>
                                                     <fontDescription key="fontDescription" name="EuphemiaUCAS-Italic" family="Euphemia UCAS" pointSize="17"/>
                                                     <color key="textColor" red="0.47668464310000003" green="0.69553601300000001" blue="0.84892462049999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -115,38 +115,52 @@
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6E5-TY-xcK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </sceneKitView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lQI-Ke-0I1">
-                                <rect key="frame" x="0.0" y="464" width="320" height="84"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="lQI-Ke-0I1">
+                                <rect key="frame" x="0.0" y="114" width="320" height="449"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWO-I4-Kba">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jWO-I4-Kba">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="254"/>
                                         <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
-                                        <color key="textColor" red="0.59999999999999998" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.77090669010000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cys-Lu-b1k">
-                                        <rect key="frame" x="0.0" y="42" width="320" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cys-Lu-b1k">
+                                        <rect key="frame" x="0.0" y="254" width="320" height="195"/>
                                         <fontDescription key="fontDescription" name="EuphemiaUCAS-Italic" family="Euphemia UCAS" pointSize="20"/>
-                                        <color key="textColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="textColor" red="1" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWq-oC-CzK">
+                                <rect key="frame" x="272" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ZgN-ZL-Un0"/>
+                                    <constraint firstAttribute="width" constant="45" id="kCM-xv-eJS"/>
+                                </constraints>
+                                <state key="normal" image="info"/>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="h9p-Bu-zR1" eventType="touchUpInside" id="PKC-8w-urm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="E8P-Is-ycK" firstAttribute="trailing" secondItem="lQI-Ke-0I1" secondAttribute="trailing" id="06v-Ps-6bM"/>
                             <constraint firstItem="lQI-Ke-0I1" firstAttribute="leading" secondItem="E8P-Is-ycK" secondAttribute="leading" id="2so-o1-lEX"/>
-                            <constraint firstItem="lQI-Ke-0I1" firstAttribute="top" secondItem="E8P-Is-ycK" secondAttribute="top" constant="400" id="53K-Ag-CTN"/>
-                            <constraint firstItem="E8P-Is-ycK" firstAttribute="bottom" secondItem="lQI-Ke-0I1" secondAttribute="bottom" constant="20" id="LB1-Rr-TnG"/>
+                            <constraint firstItem="E8P-Is-ycK" firstAttribute="trailing" secondItem="sWq-oC-CzK" secondAttribute="trailing" constant="3" id="5RW-7L-Rjx"/>
+                            <constraint firstItem="E8P-Is-ycK" firstAttribute="bottom" secondItem="lQI-Ke-0I1" secondAttribute="bottom" constant="5" id="LB1-Rr-TnG"/>
                             <constraint firstItem="6E5-TY-xcK" firstAttribute="trailing" secondItem="E8P-Is-ycK" secondAttribute="trailing" id="Qnx-yr-3sE"/>
+                            <constraint firstItem="sWq-oC-CzK" firstAttribute="top" secondItem="E8P-Is-ycK" secondAttribute="top" id="aeB-Ua-mFI"/>
                             <constraint firstItem="6E5-TY-xcK" firstAttribute="leading" secondItem="E8P-Is-ycK" secondAttribute="leading" id="jMI-C2-EX9"/>
                             <constraint firstItem="6E5-TY-xcK" firstAttribute="top" secondItem="h6c-VH-x1J" secondAttribute="top" id="kCx-1h-EQE"/>
                             <constraint firstItem="6E5-TY-xcK" firstAttribute="bottom" secondItem="E8P-Is-ycK" secondAttribute="bottom" id="s1x-x6-kRj"/>
+                            <constraint firstItem="lQI-Ke-0I1" firstAttribute="top" secondItem="E8P-Is-ycK" secondAttribute="top" constant="50" id="tU0-gp-Dg2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E8P-Is-ycK"/>
                     </view>
                     <connections>
+                        <outlet property="infoStackView" destination="lQI-Ke-0I1" id="CLn-le-yhD"/>
                         <outlet property="presentedPlanetDescriptionLabel" destination="cys-Lu-b1k" id="Ps9-Jq-qg2"/>
                         <outlet property="presentedPlanetNameLabel" destination="jWO-I4-Kba" id="f3K-IQ-RRQ"/>
                     </connections>
@@ -159,5 +173,6 @@
     <resources>
         <image name="Earth" width="1107" height="1107"/>
         <image name="backgroundImage" width="800" height="534"/>
+        <image name="info" width="55" height="55"/>
     </resources>
 </document>
