@@ -9,6 +9,8 @@
 import UIKit
 import SceneKit
 
+// MARK: - ... Some object scale values are selected arbitrarily
+
 var planetNodeName: String?
 
 class PresentedPlanetNode: SCNNode

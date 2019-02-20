@@ -70,7 +70,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="descriptionPlanetLabel" destination="t2j-pP-jO8" id="IGO-Ah-L4I"/>
+                                    <outlet property="planetDescriptionLabel" destination="t2j-pP-jO8" id="IGO-Ah-L4I"/>
                                     <outlet property="planetImageView" destination="wVI-MY-ZLU" id="YUs-7D-CLt"/>
                                     <outlet property="planetNameLabel" destination="Iq6-g2-dC3" id="d4Y-bS-N6I"/>
                                     <segue destination="h9p-Bu-zR1" kind="show" identifier="PlanetPresentationSegue" id="tOA-9h-vQA"/>

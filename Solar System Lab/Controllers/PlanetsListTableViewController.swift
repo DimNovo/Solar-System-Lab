@@ -45,9 +45,8 @@ class PlanetsListTableViewController: UITableViewController {
     
     func configure(cell: PlanetViewCell, with planet: Planet) {
         cell.planetImageView.image = planet.planetImage
-//        cell.planetImageView.layer.cornerRadius = cell.planetImageView.frame.size.width / 2
         cell.planetNameLabel.text = planet.planetName
-        cell.descriptionPlanetLabel.text = planet.planetDescription
+        cell.planetDescriptionLabel.text = planet.planetDescription
         cell.contentView.backgroundColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
     }
     

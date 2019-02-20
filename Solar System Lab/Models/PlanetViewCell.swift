@@ -13,5 +13,5 @@ class PlanetViewCell: UITableViewCell
 {
     @IBOutlet weak var planetImageView: UIImageView!
     @IBOutlet weak var planetNameLabel: UILabel!
-    @IBOutlet weak var descriptionPlanetLabel: UILabel!
+    @IBOutlet weak var planetDescriptionLabel: UILabel!
 }
